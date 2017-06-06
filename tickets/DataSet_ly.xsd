@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet_ly" targetNamespace="http://www.tempuri.org/DataSet_ly.xsd" xmlns:mstns="http://www.tempuri.org/DataSet_ly.xsd" xmlns="http://www.tempuri.org/DataSet_ly.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet_ly" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="liuyan">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="序号" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="标题" type="xs:string" minOccurs="0" />
+              <xs:element name="内容" type="xs:string" minOccurs="0" />
+              <xs:element name="作者" type="xs:string" minOccurs="0" />
+              <xs:element name="时间" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:liuyan" />
+      <xs:field xpath="mstns:序号" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

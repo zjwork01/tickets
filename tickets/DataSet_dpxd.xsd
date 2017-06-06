@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet_dpxd" targetNamespace="http://www.tempuri.org/DataSet_dpxd.xsd" xmlns:mstns="http://www.tempuri.org/DataSet_dpxd.xsd" xmlns="http://www.tempuri.org/DataSet_dpxd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet_dpxd" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="dingpiao">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="序号" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="车次" type="xs:string" minOccurs="0" />
+              <xs:element name="出发站" type="xs:string" minOccurs="0" />
+              <xs:element name="到达站" type="xs:string" minOccurs="0" />
+              <xs:element name="座位类型" type="xs:string" minOccurs="0" />
+              <xs:element name="票数" type="xs:decimal" minOccurs="0" />
+              <xs:element name="总价格" type="xs:decimal" minOccurs="0" />
+              <xs:element name="用户名" type="xs:string" minOccurs="0" />
+              <xs:element name="联系方式" type="xs:string" minOccurs="0" />
+              <xs:element name="地址" type="xs:string" minOccurs="0" />
+              <xs:element name="身份证" type="xs:string" minOccurs="0" />
+              <xs:element name="发车日期" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="车厢号" type="xs:int" minOccurs="0" />
+              <xs:element name="座位号" type="xs:int" minOccurs="0" />
+              <xs:element name="车辆类型" type="xs:string" minOccurs="0" />
+              <xs:element name="售票日期" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="售票点编号" type="xs:string" minOccurs="0" />
+              <xs:element name="是否学生票" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dingpiao" />
+      <xs:field xpath="mstns:序号" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

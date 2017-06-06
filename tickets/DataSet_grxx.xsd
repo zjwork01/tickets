@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet_grxx" targetNamespace="http://www.tempuri.org/DataSet_grxx.xsd" xmlns:mstns="http://www.tempuri.org/DataSet_grxx.xsd" xmlns="http://www.tempuri.org/DataSet_grxx.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet_grxx" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="user">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="序号" type="xs:int" />
+              <xs:element name="用户名" type="xs:string" minOccurs="0" />
+              <xs:element name="密码" type="xs:string" minOccurs="0" />
+              <xs:element name="联系方式" type="xs:string" minOccurs="0" />
+              <xs:element name="负责人" type="xs:string" minOccurs="0" />
+              <xs:element name="单位全称" type="xs:string" minOccurs="0" />
+              <xs:element name="具体地址" type="xs:string" minOccurs="0" />
+              <xs:element name="身份证" type="xs:string" minOccurs="0" />
+              <xs:element name="代售点编号" type="xs:int" minOccurs="0" />
+              <xs:element name="用户类型" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:user" />
+      <xs:field xpath="mstns:序号" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

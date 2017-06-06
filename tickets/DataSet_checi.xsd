@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet_checi" targetNamespace="http://www.tempuri.org/DataSet_checi.xsd" xmlns:mstns="http://www.tempuri.org/DataSet_checi.xsd" xmlns="http://www.tempuri.org/DataSet_checi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet_checi" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tickets">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="序号" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="车次" type="xs:string" />
+              <xs:element name="始发站" type="xs:string" minOccurs="0" />
+              <xs:element name="终点站" type="xs:string" minOccurs="0" />
+              <xs:element name="开车时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="到达时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="硬座票数" type="xs:int" minOccurs="0" />
+              <xs:element name="硬卧上票数" type="xs:int" minOccurs="0" />
+              <xs:element name="硬卧中票数" type="xs:int" minOccurs="0" />
+              <xs:element name="硬卧下票数" type="xs:int" minOccurs="0" />
+              <xs:element name="软卧上票数" type="xs:int" minOccurs="0" />
+              <xs:element name="软卧中票数" type="xs:int" minOccurs="0" />
+              <xs:element name="软卧下票数" type="xs:int" minOccurs="0" />
+              <xs:element name="有无空调" type="xs:string" minOccurs="0" />
+              <xs:element name="车辆类型" type="xs:string" minOccurs="0" />
+              <xs:element name="硬座车厢数" type="xs:int" minOccurs="0" />
+              <xs:element name="硬座车厢人数" type="xs:int" minOccurs="0" />
+              <xs:element name="硬卧车厢数" type="xs:int" minOccurs="0" />
+              <xs:element name="硬卧车厢人数" type="xs:int" minOccurs="0" />
+              <xs:element name="软卧车厢数" type="xs:int" minOccurs="0" />
+              <xs:element name="软卧车厢人数" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tickets" />
+      <xs:field xpath="mstns:车次" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

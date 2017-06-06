@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DCF9BBE4-4FCC-43FA-B116-0DAB92F3C585}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tickets</RootNamespace>
+    <AssemblyName>tickets</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_chaxun.xsc">
+      <DependentUpon>DataSet_chaxun.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_chaxun.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_chaxun2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_chaxun.xsx">
+      <DependentUpon>DataSet_chaxun.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_chaxun.xss">
+      <DependentUpon>DataSet_chaxun.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_chaxun1.xsc">
+      <DependentUpon>DataSet_chaxun1.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_chaxun1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_chaxun11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_chaxun1.xsx">
+      <DependentUpon>DataSet_chaxun1.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_chaxun1.xss">
+      <DependentUpon>DataSet_chaxun1.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_checi.xsc">
+      <DependentUpon>DataSet_checi.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_checi.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_checi1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_checi.xsx">
+      <DependentUpon>DataSet_checi.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_checi.xss">
+      <DependentUpon>DataSet_checi.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_cllx.xsc">
+      <DependentUpon>DataSet_cllx.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_cllx.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_cllx1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_cllx.xss">
+      <DependentUpon>DataSet_cllx.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_dingp.xsc">
+      <DependentUpon>DataSet_dingp.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_dingp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_dingp1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_dingp.xss">
+      <DependentUpon>DataSet_dingp.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_dingpiao.xsc">
+      <DependentUpon>DataSet_dingpiao.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_dingpiao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_dingpiao1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_dingpiao.xss">
+      <DependentUpon>DataSet_dingpiao.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_dp.xsc">
+      <DependentUpon>DataSet_dp.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_dp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_dp1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_dp.xss">
+      <DependentUpon>DataSet_dp.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_dpxd.xsc">
+      <DependentUpon>DataSet_dpxd.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_dpxd.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_dpxd1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_dpxd.xss">
+      <DependentUpon>DataSet_dpxd.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_dsdmc.xsc">
+      <DependentUpon>DataSet_dsdmc.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_dsdmc.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_dsdmc1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_dsdmc.xss">
+      <DependentUpon>DataSet_dsdmc.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_grxx.xsc">
+      <DependentUpon>DataSet_grxx.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_grxx.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_grxx1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_grxx.xss">
+      <DependentUpon>DataSet_grxx.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_kt.xsc">
+      <DependentUpon>DataSet_kt.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_kt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_kt1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_kt.xss">
+      <DependentUpon>DataSet_kt.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_liuyan.xsc">
+      <DependentUpon>DataSet_liuyan.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_liuyan.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_liuyan1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_liuyan.xss">
+      <DependentUpon>DataSet_liuyan.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_ly.xsc">
+      <DependentUpon>DataSet_ly.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_ly.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ly1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_ly.xss">
+      <DependentUpon>DataSet_ly.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_tickets.xsc">
+      <DependentUpon>DataSet_tickets.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_tickets.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_tickets1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_tickets.xss">
+      <DependentUpon>DataSet_tickets.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_ticketsinf.xsc">
+      <DependentUpon>DataSet_ticketsinf.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_ticketsinf.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ticketsinf1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_ticketsinf.xss">
+      <DependentUpon>DataSet_ticketsinf.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_tickts.xsc">
+      <DependentUpon>DataSet_tickts.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_tickts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_tickts1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_tickts.xss">
+      <DependentUpon>DataSet_tickts.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_tongji.xsc">
+      <DependentUpon>DataSet_tongji.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_tongji.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_tongji1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_tongji.xss">
+      <DependentUpon>DataSet_tongji.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_user.xsc">
+      <DependentUpon>DataSet_user.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_user.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_user1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_user.xss">
+      <DependentUpon>DataSet_user.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_userbj.xsc">
+      <DependentUpon>DataSet_userbj.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_userbj.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_userbj1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_userbj.xss">
+      <DependentUpon>DataSet_userbj.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_users.xsc">
+      <DependentUpon>DataSet_users.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_users.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_users1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_users.xss">
+      <DependentUpon>DataSet_users.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_xinwen.xsc">
+      <DependentUpon>DataSet_xinwen.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_xinwen.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_xinwen1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_xinwen.xsx">
+      <DependentUpon>DataSet_xinwen.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_xinwen.xss">
+      <DependentUpon>DataSet_xinwen.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_xw.xsc">
+      <DependentUpon>DataSet_xw.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_xw.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_xw1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_xw.xss">
+      <DependentUpon>DataSet_xw.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_yh.xsc">
+      <DependentUpon>DataSet_yh.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_yh.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_yh1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_yh.xss">
+      <DependentUpon>DataSet_yh.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet_yonghu.xsc">
+      <DependentUpon>DataSet_yonghu.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet_yonghu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_yonghu1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet_yonghu.xss">
+      <DependentUpon>DataSet_yonghu.xsd</DependentUpon>
+    </Content>
+    <Content Include="images\Thumbs.db" />
+    <None Include="Properties\PublishProfiles\Config1.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bianjiyonghu.aspx" />
+    <Content Include="chaxun.aspx" />
+    <Content Include="chaxunshengyupiao.aspx" />
+    <Content Include="dingpiaopiaoju.aspx" />
+    <Content Include="gengxincheci.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="guanliliuyan.aspx" />
+    <Content Include="guanliyonghu.aspx" />
+    <Content Include="images\01.jpg" />
+    <Content Include="images\04.jpg" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\biaoti.gif" />
+    <Content Include="images\cancel.gif" />
+    <Content Include="images\c_c_c.gif" />
+    <Content Include="images\dy.JPG" />
+    <Content Include="images\login.gif" />
+    <Content Include="images\login_bottom.jpg" />
+    <Content Include="images\login_left.jpg" />
+    <Content Include="images\login_right.jpg" />
+    <Content Include="images\login_top.jpg" />
+    <Content Include="images\main_bg.jpg" />
+    <Content Include="images\mb_home.gif" />
+    <Content Include="images\mdl_default_bg.JPG" />
+    <Content Include="images\naBialym.gif" />
+    <Content Include="images\pw_icon.gif" />
+    <Content Include="images\s_01.gif" />
+    <Content Include="images\s_02.gif" />
+    <Content Include="images\s_03.gif" />
+    <Content Include="images\s_05.gif" />
+    <Content Include="images\user_icon.gif" />
+    <Content Include="login.aspx" />
+    <Content Include="main.aspx" />
+    <Content Include="maipiao.aspx" />
+    <Content Include="piaoju.aspx" />
+    <Content Include="shoupiaoqingkuangtongji.aspx" />
+    <Content Include="tickets.Publish.xml" />
+    <Content Include="tongji.aspx" />
+    <Content Include="tongji2.aspx" />
+    <Content Include="tuipiao.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="xinwenguanli.aspx" />
+    <Content Include="xwgg.aspx" />
+    <Content Include="yhxx.aspx" />
+    <Content Include="yijianfankui.aspx" />
+    <Content Include="yonghuguanlizhujiemian.aspx" />
+    <Content Include="zhuce.aspx" />
+    <Content Include="zhucechenggong.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bianjiyonghu.aspx.cs">
+      <DependentUpon>bianjiyonghu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chaxun.aspx.cs">
+      <DependentUpon>chaxun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chaxunshengyupiao.aspx.cs">
+      <DependentUpon>chaxunshengyupiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="data.cs" />
+    <Compile Include="DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_chaxun11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_chaxun1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_chaxun2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_chaxun.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_checi1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_checi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_cllx1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_cllx.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_dingp1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_dingp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_dingpiao1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_dingpiao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_dp1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_dp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_dpxd1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_dpxd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_dsdmc1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_dsdmc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_grxx1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_grxx.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_kt1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_kt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_liuyan1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_liuyan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_ly1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ly.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_tickets1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_tickets.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_ticketsinf1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ticketsinf.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_tickts1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_tickts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_tongji1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_tongji.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_user1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_user.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_userbj1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_userbj.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_users1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_users.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_xinwen1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_xinwen.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_xw1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_xw.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_yh1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_yh.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_yonghu1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_yonghu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dingpiaopiaoju.aspx.cs">
+      <DependentUpon>dingpiaopiaoju.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gengxincheci.aspx.cs">
+      <DependentUpon>gengxincheci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="guanliliuyan.aspx.cs">
+      <DependentUpon>guanliliuyan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guanliyonghu.aspx.cs">
+      <DependentUpon>guanliyonghu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maipiao.aspx.cs">
+      <DependentUpon>maipiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="piaoju.aspx.cs">
+      <DependentUpon>piaoju.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shoupiaoqingkuangtongji.aspx.cs">
+      <DependentUpon>shoupiaoqingkuangtongji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tongji.aspx.cs">
+      <DependentUpon>tongji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tongji2.aspx.cs">
+      <DependentUpon>tongji2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tuipiao.aspx.cs">
+      <DependentUpon>tuipiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xinwenguanli.aspx.cs">
+      <DependentUpon>xinwenguanli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xwgg.aspx.cs">
+      <DependentUpon>xwgg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yhxx.aspx.cs">
+      <DependentUpon>yhxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yijianfankui.aspx.cs">
+      <DependentUpon>yijianfankui.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonghuguanlizhujiemian.aspx.cs">
+      <DependentUpon>yonghuguanlizhujiemian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zhuce.aspx.cs">
+      <DependentUpon>zhuce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zhucechenggong.aspx.cs">
+      <DependentUpon>zhucechenggong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bianjiyonghu.aspx.resx">
+      <DependentUpon>bianjiyonghu.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chaxun.aspx.resx">
+      <DependentUpon>chaxun.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chaxunshengyupiao.aspx.resx">
+      <DependentUpon>chaxunshengyupiao.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dingpiaopiaoju.aspx.resx">
+      <DependentUpon>dingpiaopiaoju.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gengxincheci.aspx.resx">
+      <DependentUpon>gengxincheci.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guanliliuyan.aspx.resx">
+      <DependentUpon>guanliliuyan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guanliyonghu.aspx.resx">
+      <DependentUpon>guanliyonghu.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.aspx.resx">
+      <DependentUpon>login.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.aspx.resx">
+      <DependentUpon>main.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maipiao.aspx.resx">
+      <DependentUpon>maipiao.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="piaoju.aspx.resx">
+      <DependentUpon>piaoju.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shoupiaoqingkuangtongji.aspx.resx">
+      <DependentUpon>shoupiaoqingkuangtongji.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tongji.aspx.resx">
+      <DependentUpon>tongji.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tongji2.aspx.resx">
+      <DependentUpon>tongji2.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tuipiao.aspx.resx">
+      <DependentUpon>tuipiao.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xinwenguanli.aspx.resx">
+      <DependentUpon>xinwenguanli.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xwgg.aspx.resx">
+      <DependentUpon>xwgg.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yhxx.aspx.resx">
+      <DependentUpon>yhxx.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yijianfankui.aspx.resx">
+      <DependentUpon>yijianfankui.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yonghuguanlizhujiemian.aspx.resx">
+      <DependentUpon>yonghuguanlizhujiemian.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zhuce.aspx.resx">
+      <DependentUpon>zhuce.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zhucechenggong.aspx.resx">
+      <DependentUpon>zhucechenggong.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14616</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <!-- <IISUrl>http://localhost:14426/</IISUrl> -->
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
